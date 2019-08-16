@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Lokalise Language Key Converter",
+  "version": "1.0",
+  "description": "convert base language value to key in the edit page",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://lokalise.co/project/*"
+      ],
+      "js": [
+        "contentScript.js"
+      ],
+      "run_at": "document_end"
+    }
+  ]
+}
